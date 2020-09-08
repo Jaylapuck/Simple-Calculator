@@ -18,7 +18,7 @@ namespace SimpleCalculator
                 InputCoverter inputCoverter = new InputCoverter();
                 CalculatorEngine.CalculatorEngine calculatorEngine = new CalculatorEngine.CalculatorEngine();
 
-                Console.WriteLine("Enter a numbered valueas  ");
+                Console.WriteLine("Enter a numbered numbered value ");
 
                 //Verifies if it's a number and not a word.
                 while (!double.TryParse(Console.ReadLine(), out input))
