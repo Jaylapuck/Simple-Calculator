@@ -18,7 +18,7 @@ namespace SimpleCalculator
                 InputCoverter inputCoverter = new InputCoverter();
                 CalculatorEngine.CalculatorEngine calculatorEngine = new CalculatorEngine.CalculatorEngine();
 
-                Console.WriteLine("Enter a number");
+                Console.WriteLine("Enter a numbered value  ");
 
                 //Verifies if it's a number and not a word.
                 while (!double.TryParse(Console.ReadLine(), out input))
@@ -39,7 +39,7 @@ namespace SimpleCalculator
                 //Verifies if the operator is valid
                 while (operation != "+" && operation != "plus" && operation != "-" && operation != "minus" && operation != "*" && operation != "multiply" && operation != "/" && operation != "divided" && operation != "%" && operation != "modulus")
                 {
-                    Console.WriteLine("Please enter any valid operation by symbol or their word, like + is also plus");
+                    Console.WriteLine("Please enter any valid operation by symbol or their word, like + is also 'plus'");
 
                     operation = Console.ReadLine().ToLower();
                 }
